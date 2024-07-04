@@ -1,0 +1,37 @@
+pytest -v -s pytest_assert.py::TestExample::test_validate_title
+pytest -k example
+
+Here,
+    -v = Verbose Output : To get more detailed output, add the -v (verbose) flag.
+    -s = Show Print Statements : To see print statements in the output, add the -s flag.
+    -k = Run Tests Matching a Pattern: To run tests that match a specific pattern, use the -k option.
+    "pytest_assert.py" a file name.
+    "TestExample" a Class name.
+    "test_validate_title" a method name.
+    "example" is pattern.
+
+    To run all tests in your project, simply run : pytest
+
+
+ pytest-html
+ pytest -v -s pytest_appiumintegration.py::test_demo --html=Report/AppiumInteg.html
+
+ allure-pytest
+ pytest -v -s pytest_appiumintegration.py::test_demo --alluredir="./allureReport/"
+ allure serve allureReport
+
+
+ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+ irm get.scope.sh | iex
+
+ scoop install allure
+
+ \bin\checkver.ps1 allure -u
+ scoop update allure
+
+
+
+# Adding screenshot when fail code sample which does not work
+
+
+
